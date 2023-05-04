@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "noUncheckedIndexedAccess": false,
+        "noUnusedLocals": false
+    },
+    "include": [
+        "./schema.ts",
+        "./__types__.ts"
+    ]
+}
