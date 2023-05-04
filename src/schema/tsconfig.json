@@ -6,5 +6,6 @@
     "include": [
         "./schema.ts",
         "./__types__.ts"
-    ]
+    ],
+    "extends": "../tsconfig.base.json"
 }

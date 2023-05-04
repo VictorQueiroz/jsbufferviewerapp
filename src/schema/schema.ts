@@ -12,7 +12,7 @@ export function generatedFile(params: generatedFileInputParams): generatedFile {
     };
 }
 export function encodeGeneratedFile(s: ISerializer, value: generatedFile) {
-    s.writeInt32(147338165);
+    s.writeInt32(-519759154);
     /**
      * encoding param: path
      */
@@ -29,7 +29,7 @@ export function decodeGeneratedFile(__d: IDeserializer): generatedFile | null {
     /**
      * decode header
      */
-    if(__id !== 147338165) return null;
+    if(__id !== -519759154) return null;
     let path: string;
     let contents: string;
     /**
@@ -68,7 +68,7 @@ export function generatedFiles(params: generatedFilesInputParams): generatedFile
     };
 }
 export function encodeGeneratedFiles(s: ISerializer, value: generatedFiles) {
-    s.writeInt32(-1609744325);
+    s.writeInt32(1168059267);
     /**
      * encoding param: files
      */
@@ -85,7 +85,7 @@ export function decodeGeneratedFiles(__d: IDeserializer): generatedFiles | null 
     /**
      * decode header
      */
-    if(__id !== -1609744325) return null;
+    if(__id !== 1168059267) return null;
     let files: Array<generatedFile>;
     /**
      * decoding param: files
@@ -128,7 +128,7 @@ export function decodeRequestTrait(__d: IDeserializer) {
     __d.rewindInt32();
     let value: GenerateFiles;
     switch(__id) {
-        case -616859713: {
+        case 1800459719: {
             const tmp = decodeGenerateFiles(__d);
             if(tmp === null) return null;
             value = tmp;
@@ -163,25 +163,25 @@ export function decodeResultTrait(__d: IDeserializer) {
     __d.rewindInt32();
     let value: generatedFiles | errorInternalServerError | errorDetailedParsingError | errorParsingError;
     switch(__id) {
-        case -1609744325: {
+        case 1168059267: {
             const tmp = decodeGeneratedFiles(__d);
             if(tmp === null) return null;
             value = tmp;
             break;
         }
-        case 1176202453: {
+        case 1951666228: {
             const tmp = decodeErrorInternalServerError(__d);
             if(tmp === null) return null;
             value = tmp;
             break;
         }
-        case 1786452860: {
+        case -387976743: {
             const tmp = decodeErrorDetailedParsingError(__d);
             if(tmp === null) return null;
             value = tmp;
             break;
         }
-        case -446967748: {
+        case -629796699: {
             const tmp = decodeErrorParsingError(__d);
             if(tmp === null) return null;
             value = tmp;
@@ -204,7 +204,7 @@ export function GenerateFiles(params: GenerateFilesInputParams): GenerateFiles {
     };
 }
 export function encodeGenerateFiles(s: ISerializer, value: GenerateFiles) {
-    s.writeInt32(-616859713);
+    s.writeInt32(1800459719);
     /**
      * encoding param: contents
      */
@@ -216,7 +216,7 @@ export function decodeGenerateFiles(__d: IDeserializer): GenerateFiles | null {
     /**
      * decode header
      */
-    if(__id !== -616859713) return null;
+    if(__id !== 1800459719) return null;
     let contents: string;
     /**
      * decoding param: contents
@@ -256,19 +256,19 @@ export function decodeErrorTrait(__d: IDeserializer) {
     __d.rewindInt32();
     let value: errorInternalServerError | errorDetailedParsingError | errorParsingError;
     switch(__id) {
-        case 1176202453: {
+        case 1951666228: {
             const tmp = decodeErrorInternalServerError(__d);
             if(tmp === null) return null;
             value = tmp;
             break;
         }
-        case 1786452860: {
+        case -387976743: {
             const tmp = decodeErrorDetailedParsingError(__d);
             if(tmp === null) return null;
             value = tmp;
             break;
         }
-        case -446967748: {
+        case -629796699: {
             const tmp = decodeErrorParsingError(__d);
             if(tmp === null) return null;
             value = tmp;
@@ -290,14 +290,14 @@ export function errorInternalServerError(params: errorInternalServerErrorInputPa
     };
 }
 export function encodeErrorInternalServerError(s: ISerializer, _: errorInternalServerError) {
-    s.writeInt32(1176202453);
+    s.writeInt32(1951666228);
 }
 export function decodeErrorInternalServerError(__d: IDeserializer): errorInternalServerError | null {
     const __id = __d.readInt32();
     /**
      * decode header
      */
-    if(__id !== 1176202453) return null;
+    if(__id !== 1951666228) return null;
     return {
         _name: 'schema.errorInternalServerError',
     };
@@ -320,7 +320,7 @@ export function errorDetailedParsingError(params: errorDetailedParsingErrorInput
     };
 }
 export function encodeErrorDetailedParsingError(s: ISerializer, value: errorDetailedParsingError) {
-    s.writeInt32(1786452860);
+    s.writeInt32(-387976743);
     /**
      * encoding param: lineNumber
      */
@@ -332,7 +332,7 @@ export function decodeErrorDetailedParsingError(__d: IDeserializer): errorDetail
     /**
      * decode header
      */
-    if(__id !== 1786452860) return null;
+    if(__id !== -387976743) return null;
     let lineNumber: number;
     /**
      * decoding param: lineNumber
@@ -362,14 +362,14 @@ export function errorParsingError(params: errorParsingErrorInputParams = {}): er
     };
 }
 export function encodeErrorParsingError(s: ISerializer, _: errorParsingError) {
-    s.writeInt32(-446967748);
+    s.writeInt32(-629796699);
 }
 export function decodeErrorParsingError(__d: IDeserializer): errorParsingError | null {
     const __id = __d.readInt32();
     /**
      * decode header
      */
-    if(__id !== -446967748) return null;
+    if(__id !== -629796699) return null;
     return {
         _name: 'schema.errorParsingError',
     };
@@ -393,7 +393,7 @@ export function messageRequest(params: messageRequestInputParams): messageReques
     };
 }
 export function encodeMessageRequest(s: ISerializer, value: messageRequest) {
-    s.writeInt32(-1960323619);
+    s.writeInt32(871459121);
     /**
      * encoding param: requestId
      */
@@ -410,7 +410,7 @@ export function decodeMessageRequest(__d: IDeserializer): messageRequest | null 
     /**
      * decode header
      */
-    if(__id !== -1960323619) return null;
+    if(__id !== 871459121) return null;
     let requestId: number;
     let request: Request;
     /**
@@ -452,7 +452,7 @@ export function messageResponse(params: messageResponseInputParams): messageResp
     };
 }
 export function encodeMessageResponse(s: ISerializer, value: messageResponse) {
-    s.writeInt32(-1508271331);
+    s.writeInt32(-1309406384);
     /**
      * encoding param: requestId
      */
@@ -469,7 +469,7 @@ export function decodeMessageResponse(__d: IDeserializer): messageResponse | nul
     /**
      * decode header
      */
-    if(__id !== -1508271331) return null;
+    if(__id !== -1309406384) return null;
     let requestId: number;
     let result: Result;
     /**
