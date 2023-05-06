@@ -7,7 +7,7 @@ import ClientContext from "./ClientContext";
 import Client from "./Client";
 
 // const client = new Client("ws://localhost:4000/ws");
-const client = new Client("wss://jsbufferdemo.herokuapp.com/ws");
+const client = new Client("wss://jsbufferviewerdemo-backend.onrender.com/ws");
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
 root.render(
