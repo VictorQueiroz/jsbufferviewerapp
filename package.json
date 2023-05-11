@@ -12,7 +12,7 @@
     "@types/react": "^18.2.2",
     "@types/react-dom": "^18.2.3",
     "autobind-decorator": "^2.4.0",
-    "jsbuffer": "^0.0.16",
+    "jsbuffer": "^0.0.43",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
